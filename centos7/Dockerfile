@@ -4,3 +4,4 @@ RUN sed -e 's|^mirrorlist=|#mirrorlist=|g' \
         -i.bak \
         /etc/yum.repos.d/CentOS-*.repo \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+ENV LANG en_US.utf8
